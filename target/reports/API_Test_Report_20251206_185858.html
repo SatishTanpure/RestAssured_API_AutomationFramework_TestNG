@@ -1,0 +1,1145 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>API Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">API Regression Tests</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 6, 2025 06:58:58 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="warning" href="#"><span>Warning</span><span class="status warning"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">PATCH</a><a class="dropdown-item" href="#">DELETE</a><a class="dropdown-item" href="#">POST</a><a class="dropdown-item" href="#">PUT</a><a class="dropdown-item" href="#">GET</a><a class="dropdown-item" href="#">Regression</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="warning" test-id="1"
+          author=""
+          tag="Regression POST"
+          device="">
+          <div class="test-detail">
+            <p class="name">POST /contacts - Create Contact</p>
+            <p class="text-sm">
+              <span>6:58:59 PM</span> / <span>00:00:09:380</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">POST /contacts - Create Contact</h5>
+<span class='badge badge-success'>12.06.2025 6:58:59 PM</span>
+<span class='badge badge-danger'>12.06.2025 6:59:09 PM</span>
+<span class='badge badge-default'>00:00:09:380</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">POST</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:58:59 PM</td>
+        <td>
+          <span class='badge white-text blue'>REQUEST [POST] - /contacts</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:58:59 PM</td>
+        <td>
+          Request Payload Used: ==>>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:00 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>{
+  "firstName" : "David",
+  "lastName" : "Boss",
+  "birthdate" : "1985-10-10",
+  "email" : "test@test.com",
+  "phone" : "8546254258",
+  "street1" : "100 MAIN ST",
+  "street2" : "PO BOX 125",
+  "city" : "Atlanta",
+  "stateProvince" : "Alabama",
+  "postalCode" : "35801",
+  "country" : "USA"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:09 PM</td>
+        <td>
+          <span class='badge white-text green'>RESPONSE Status Code: 201</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:09 PM</td>
+        <td>
+          Response Time: 3841 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>6:59:09 PM</td>
+        <td>
+          Response took longer than 2 seconds!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:09 PM</td>
+        <td>
+          Response Body Received: ==>>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:09 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>{
+  "_id" : "69342fa3e30b580015312179",
+  "firstName" : "David",
+  "lastName" : "Boss",
+  "birthdate" : "1985-10-10",
+  "email" : "test@test.com",
+  "phone" : "8546254258",
+  "street1" : "100 MAIN ST",
+  "street2" : "PO BOX 125",
+  "city" : "Atlanta",
+  "stateProvince" : "Alabama",
+  "postalCode" : "35801",
+  "country" : "USA",
+  "owner" : "6926faedb96c4e00154513f4",
+  "__v" : 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:59:09 PM</td>
+        <td>
+          <span class='badge white-text green'>Contact created successfully</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="GET Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">GET /contacts - Fetch Newly Created Contact</p>
+            <p class="text-sm">
+              <span>6:59:09 PM</span> / <span>00:00:01:335</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GET /contacts - Fetch Newly Created Contact</h5>
+<span class='badge badge-success'>12.06.2025 6:59:09 PM</span>
+<span class='badge badge-danger'>12.06.2025 6:59:10 PM</span>
+<span class='badge badge-default'>00:00:01:335</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">GET</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          <span class='badge white-text blue'>REQUEST [GET] - /contacts/69342fa3e30b580015312179</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          Request Body: <empty>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          <span class='badge white-text green'>RESPONSE Status Code: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          Response Time: 1204 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          Response Body Received: ==>>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>{
+  "_id" : "69342fa3e30b580015312179",
+  "firstName" : "David",
+  "lastName" : "Boss",
+  "birthdate" : "1985-10-10",
+  "email" : "test@test.com",
+  "phone" : "8546254258",
+  "street1" : "100 MAIN ST",
+  "street2" : "PO BOX 125",
+  "city" : "Atlanta",
+  "stateProvince" : "Alabama",
+  "postalCode" : "35801",
+  "country" : "USA",
+  "owner" : "6926faedb96c4e00154513f4",
+  "__v" : 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          <span class='badge white-text green'>Contact fetched successfully</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag="Regression PUT"
+          device="">
+          <div class="test-detail">
+            <p class="name">PUT /contacts - Update Contact</p>
+            <p class="text-sm">
+              <span>6:59:10 PM</span> / <span>00:00:01:324</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">PUT /contacts - Update Contact</h5>
+<span class='badge badge-success'>12.06.2025 6:59:10 PM</span>
+<span class='badge badge-danger'>12.06.2025 6:59:11 PM</span>
+<span class='badge badge-default'>00:00:01:324</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">PUT</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          <span class='badge white-text blue'>REQUEST [PUT] - /contacts/69342fa3e30b580015312179</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          Request Payload Used: ==>>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:10 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>{
+  "firstName" : "David_Update_Put",
+  "lastName" : "Boss_Update_Put",
+  "birthdate" : "1985-10-10",
+  "email" : "test@test.com",
+  "phone" : "8546254258",
+  "street1" : "100 MAIN ST",
+  "street2" : "PO BOX 125",
+  "city" : "Atlanta",
+  "stateProvince" : "Alabama",
+  "postalCode" : "35801",
+  "country" : "USA_Update_Put"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:11 PM</td>
+        <td>
+          <span class='badge white-text green'>RESPONSE Status Code: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:11 PM</td>
+        <td>
+          Response Time: 1201 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:11 PM</td>
+        <td>
+          Response Body Received: ==>>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:11 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>{
+  "_id" : "69342fa3e30b580015312179",
+  "firstName" : "David_Update_Put",
+  "lastName" : "Boss_Update_Put",
+  "birthdate" : "1985-10-10",
+  "email" : "test@test.com",
+  "phone" : "8546254258",
+  "street1" : "100 MAIN ST",
+  "street2" : "PO BOX 125",
+  "city" : "Atlanta",
+  "stateProvince" : "Alabama",
+  "postalCode" : "35801",
+  "country" : "USA_Update_Put",
+  "owner" : "6926faedb96c4e00154513f4",
+  "__v" : 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:59:11 PM</td>
+        <td>
+          <span class='badge white-text green'>Contact updated successfully with PUT</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag="PATCH Regression"
+          device="">
+          <div class="test-detail">
+            <p class="name">PATCH /contacts - Update Contact</p>
+            <p class="text-sm">
+              <span>6:59:11 PM</span> / <span>00:00:01:274</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">PATCH /contacts - Update Contact</h5>
+<span class='badge badge-success'>12.06.2025 6:59:11 PM</span>
+<span class='badge badge-danger'>12.06.2025 6:59:13 PM</span>
+<span class='badge badge-default'>00:00:01:274</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">PATCH</span>
+<span class="badge badge-pill badge-default">Regression</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:11 PM</td>
+        <td>
+          <span class='badge white-text blue'>REQUEST [PATCH] - /contacts/69342fa3e30b580015312179</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:11 PM</td>
+        <td>
+          Request Payload Used: ==>>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:11 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>{
+  "firstName" : "David_Update_Patch",
+  "lastName" : "Boss_Update_Patch",
+  "country" : "USA_Update_Patch"
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:13 PM</td>
+        <td>
+          <span class='badge white-text green'>RESPONSE Status Code: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:13 PM</td>
+        <td>
+          Response Time: 1185 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:13 PM</td>
+        <td>
+          Response Body Received: ==>>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:13 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>{
+  "_id" : "69342fa3e30b580015312179",
+  "firstName" : "David_Update_Patch",
+  "lastName" : "Boss_Update_Patch",
+  "birthdate" : "1985-10-10",
+  "email" : "test@test.com",
+  "phone" : "8546254258",
+  "street1" : "100 MAIN ST",
+  "street2" : "PO BOX 125",
+  "city" : "Atlanta",
+  "stateProvince" : "Alabama",
+  "postalCode" : "35801",
+  "country" : "USA_Update_Patch",
+  "owner" : "6926faedb96c4e00154513f4",
+  "__v" : 0
+}</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:59:13 PM</td>
+        <td>
+          <span class='badge white-text green'>Contact updated successfully with PATCH</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag="Regression DELETE"
+          device="">
+          <div class="test-detail">
+            <p class="name">DELETE /contacts - Delete Contact</p>
+            <p class="text-sm">
+              <span>6:59:13 PM</span> / <span>00:00:01:381</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DELETE /contacts - Delete Contact</h5>
+<span class='badge badge-success'>12.06.2025 6:59:13 PM</span>
+<span class='badge badge-danger'>12.06.2025 6:59:14 PM</span>
+<span class='badge badge-default'>00:00:01:381</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">DELETE</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:13 PM</td>
+        <td>
+          <span class='badge white-text blue'>REQUEST [DELETE] - /contacts/69342fa3e30b580015312179</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:13 PM</td>
+        <td>
+          Request Body: <empty>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:14 PM</td>
+        <td>
+          <span class='badge white-text green'>RESPONSE Status Code: 200</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:14 PM</td>
+        <td>
+          Response Time: 1127 ms
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:14 PM</td>
+        <td>
+          Response Body Received: ==>>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>6:59:14 PM</td>
+        <td>
+          <div class='row'>
+ <div class='col-md-12'>
+  <textarea readonly class='code-block'>Contact deleted</textarea>
+ </div>
+</div>
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>6:59:14 PM</td>
+        <td>
+          <span class='badge white-text green'>Contact deleted successfully</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">PATCH</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>PATCH</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>PATCH /contacts - Update Contact</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">DELETE</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>DELETE</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>DELETE /contacts - Delete Contact</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-warning'>1</span>
+</span>
+<p class="name">POST</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>POST</h4>
+<span status="skip" class='badge log badge-warning'>1 others</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>18:58:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>POST /contacts - Create Contact</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">PUT</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>PUT</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>PUT /contacts - Update Contact</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">GET</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>GET</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>GET /contacts - Fetch Newly Created Contact</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-warning'>1</span>
+</span>
+<p class="name">Regression</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="skip" class='badge log badge-warning'>1 others</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="warning">
+<td><span class="badge log warning-bg">Warning</span></td>
+<td>18:58:59 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>POST /contacts - Create Contact</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>GET /contacts - Fetch Newly Created Contact</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>PUT /contacts - Update Contact</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:11 PM</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>PATCH /contacts - Update Contact</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:59:13 PM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>DELETE /contacts - Delete Contact</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 6, 2025 06:58:58 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 6, 2025 06:59:14 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='80%'>
+<b>4</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='20%'>1</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='12%'><b>5</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>34</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"POST /contacts - Create Contact":9.38,"GET /contacts - Fetch Newly Created Contact":1.335,"PUT /contacts - Update Contact":1.324,"PATCH /contacts - Update Contact":1.274,"DELETE /contacts - Delete Contact":1.381
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>PATCH</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>DELETE</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>POST</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>PUT</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>GET</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Regression</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>80%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Windows 10</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>17.0.3</td>
+</tr>
+<tr>
+<td>Test Environment</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>Test Release</td>
+<td>v1.0</td>
+</tr>
+<tr>
+<td>Base URL</td>
+<td>https://thinking-tester-contact-list.herokuapp.com/</td>
+</tr>
+<tr>
+<td>Executed By</td>
+<td>Admin</td>
+</tr>
+<tr>
+<td>Execution Start Time</td>
+<td>2025-12-06 18:58:58</td>
+</tr>
+<tr>
+<td>Execution End Time</td>
+<td>2025-12-06 18:59:14</td>
+</tr>
+<tr>
+<td>Total Execution Time (Seconds)</td>
+<td>15.77 Seconds</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 0,
+warningParent: 1,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 5,
+failEvents: 0,
+warningEvents: 1,
+skipEvents: 0,
+infoEvents: 33
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
